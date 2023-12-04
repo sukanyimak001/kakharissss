@@ -1,0 +1,22 @@
+.auth-page{
+    display: flex;
+    flex-direction: row;
+    
+    .form-section{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner{
+        flex: 1;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
