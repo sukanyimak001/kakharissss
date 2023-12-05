@@ -1,0 +1,243 @@
+.section {
+    &.search {
+        position: relative;
+
+        img.background {
+            width: 100%;
+        }
+
+        .content {
+            position: absolute;
+            left: 116px;
+            right: 116px;
+            top: 32px;
+            bottom: 32px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 16px;
+
+            .search {
+                position: relative;
+
+                &-btn {
+                    border-radius: 25px;
+                    background: #0F21FF;
+                    box-shadow: 0px 12px 60px 50px rgba(34, 125, 44, 0.25);
+                    display: flex;
+                    height: 60px;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0px 32px;
+                    gap: 12px;
+                    align-self: stretch;
+                    color: var(--White, #FFF);
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 140%;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 24px;
+                    height: 24px;
+                    z-index: 2;
+                    top: 50%;
+                    left: 23px;
+                    transform: translateY(-50%);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-image: url("data:image/svg+xml,%3Csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.8806 2.00195C17.2506 2.00195 21.6186 6.36995 21.6186 11.74C21.6186 14.2735 20.6463 16.5842 19.0553 18.3184L22.186 21.4427C22.479 21.7357 22.48 22.2097 22.187 22.5027C22.041 22.6507 21.848 22.7237 21.656 22.7237C21.465 22.7237 21.273 22.6507 21.126 22.5047L17.9575 19.345C16.2907 20.6798 14.1773 21.479 11.8806 21.479C6.5106 21.479 2.1416 17.11 2.1416 11.74C2.1416 6.36995 6.5106 2.00195 11.8806 2.00195ZM11.8806 3.50195C7.3376 3.50195 3.6416 7.19695 3.6416 11.74C3.6416 16.283 7.3376 19.979 11.8806 19.979C16.4226 19.979 20.1186 16.283 20.1186 11.74C20.1186 7.19695 16.4226 3.50195 11.8806 3.50195Z' fill='%238E8E8F'/%3E%3C/svg%3E%0A");
+                }
+            }
+
+            input {
+                border: none;
+                outline: none;
+                width: 100%;
+                height: 60px;
+                border-radius: 25px;
+                color: #000000;
+                background: #FAFAFA;
+                padding-left: 70px;
+                position: relative;
+
+                &::placeholder {
+                    color: rgba($color: #000000, $alpha: 0.5);
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 160%;
+                    letter-spacing: -0.28px;
+                }
+            }
+
+            p {
+                color: #FFF;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 160%;
+                letter-spacing: -0.32px;
+                margin: 0px;
+            }
+        }
+    }
+
+    &.news {
+        .nav-tabs {
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 64px;
+
+            .nav-link {
+                padding: 14px 0px;
+                border: none;
+                color: var(--Gray, #8E8E8F);
+                text-align: center;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 160%;
+                letter-spacing: -0.32px;
+
+                &.active {
+                    border: none;
+                    color: var(--Black, #181818);
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 160%;
+                    letter-spacing: -0.32px;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        bottom: 6px;
+                        left: 0px;
+                        right: 0px;
+                        border-radius: 25px 25px 0px 0px;
+                        background: #0F21FF;
+                        height: 6px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .news-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .news-item {
+            display: flex;
+            padding: 32px 36px;
+            align-items: flex-end;
+            gap: 38px;
+            align-self: stretch;
+            border-bottom: 2px solid #F0F0F0;
+
+            &:last-of-type {
+                border-bottom: none;
+            }
+
+            // box-shadow: 50px 50px 100px 50px rgba(50, 50, 50, 0.05);
+        }
+
+        .content {
+            color: rgba($color: #000000, $alpha: 0.5);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%;
+            display: flex;
+            align-self: stretch;
+            gap: 8px;
+            flex-direction: column;
+
+            .text {
+                flex: 1;
+            }
+
+            img {
+                width: 272px;
+                height: 203px;
+            }
+
+            .title {
+                color: #000;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 130%;
+            }
+
+            .dot {
+                width: 6px;
+                height: 6px;
+                display: inline-block;
+                background-color: #0F21FF;
+                border-radius: 50%;
+                margin: 0px 11px;
+            }
+
+            .read-more {
+                display: flex;
+                padding: 12px 24px;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 12px;
+                border-radius: 35px;
+                background: #0F21FF;
+
+                color: var(--White, #FFF);
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 120%;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &.news-detail {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .date {
+            display: flex;
+            padding: 8px 16px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border-radius: 32px;
+            background: rgba(15, 33, 255, 0.10);
+            color: #0F21FF;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 140%;
+            align-self: flex-start;
+        }
+
+        .title {
+            color: #000;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 130%;
+            letter-spacing: -0.64px;
+            margin-bottom: 34px;
+        }
+
+        p {
+            margin: 0px;
+            color: rgba($color: #000000, $alpha: 0.5);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 160%;
+            letter-spacing: -0.28px;
+        }
+    }
+}

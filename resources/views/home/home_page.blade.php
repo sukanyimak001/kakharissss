@@ -3,9 +3,6 @@
 @section('content')
     <div class="base-page">
         @include("home.components.header")
-        <div class="form-section">
-            
-        </div>
         @include("home.components.welcome_section")
         @include("home.components.our_service")
         @include("home.components.about_us")
