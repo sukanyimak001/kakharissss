@@ -22,6 +22,12 @@ Route::get('/home', function () {
 Route::get('/news', function () {
     return view('/news/news_page');
 });
+Route::get('/news/leaflet', function () {
+    return view('/news/news_leaflet_page');
+});
+Route::get('/news/rates', function () {
+    return view('/news/service_rates_page');
+});
 Route::get('/news/{any}', function () {
     return view('/news/detail_news_page');
 });
