@@ -25,8 +25,17 @@ Route::get('/news', function () {
 Route::get('/news/leaflet', function () {
     return view('/news/news_leaflet_page');
 });
+Route::get('/news/survey', function () {
+    return view('/news/news_survey_page');
+});
 Route::get('/news/rates', function () {
     return view('/news/service_rates_page');
+});
+Route::get('/news/sakip', function () {
+    return view('/news/sakip_page');
+});
+Route::get('/news/indicator', function () {
+    return view('/news/news_indicator_page');
 });
 Route::get('/news/{any}', function () {
     return view('/news/detail_news_page');

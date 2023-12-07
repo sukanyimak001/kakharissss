@@ -40,84 +40,92 @@
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
             tabindex="0">
-            <table class="table">
-                <tbody>
-                    @for ($i = 0; $i < 10; $i++)
-                        <tr>
-                            <td>{{ $i + 1 }}</td>
-                            <td>
-                                Konsultasi Antar Sub Spesialis Umum
-                            </td>
-                            <td class="text-end">
-                                <div class="badge">
-                                    Rp 60.000
-                                </div>
-                            </td>
-                            <td></td>
-                        </tr>
-                    @endfor
-                </tbody>
-            </table>
+            <div class="table-wrapper">
+                <table class="table">
+                    <tbody>
+                        @for ($i = 0; $i < 10; $i++)
+                            <tr>
+                                <td>{{ $i + 1 }}</td>
+                                <td>
+                                    Konsultasi Antar Sub Spesialis Umum
+                                </td>
+                                <td class="text-end">
+                                    <div class="badge">
+                                        Rp 60.000
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        @endfor
+                    </tbody>
+                </table>
+            </div>
         </div>
         <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-            <table class="table">
-                <tbody>
-                    @for ($i = 0; $i < 10; $i++)
-                        <tr>
-                            <td>{{ $i + 1 }}</td>
-                            <td>
-                                Konsultasi Antar Sub Spesialis Umum
-                            </td>
-                            <td class="text-end">
-                                <div class="badge">
-                                    Rp 80.000
-                                </div>
-                            </td>
-                            <td></td>
-                        </tr>
-                    @endfor
-                </tbody>
-            </table>
+            <div class="table-wrapper">
+                <table class="table">
+                    <tbody>
+                        @for ($i = 0; $i < 10; $i++)
+                            <tr>
+                                <td>{{ $i + 1 }}</td>
+                                <td>
+                                    Konsultasi Antar Sub Spesialis Umum
+                                </td>
+                                <td class="text-end">
+                                    <div class="badge">
+                                        Rp 80.000
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        @endfor
+                    </tbody>
+                </table>
+            </div>
         </div>
         <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-            <table class="table">
-                <tbody>
-                    @for ($i = 0; $i < 10; $i++)
-                        <tr>
-                            <td>{{ $i + 1 }}</td>
-                            <td>
-                                Konsultasi Antar Sub Spesialis Umum
-                            </td>
-                            <td class="text-end">
-                                <div class="badge">
-                                    Rp 150.000
-                                </div>
-                            </td>
-                            <td></td>
-                        </tr>
-                    @endfor
-                </tbody>
-            </table>
+            <div class="table-wrapper">
+                <table class="table">
+                    <tbody>
+                        @for ($i = 0; $i < 10; $i++)
+                            <tr>
+                                <td>{{ $i + 1 }}</td>
+                                <td>
+                                    Konsultasi Antar Sub Spesialis Umum
+                                </td>
+                                <td class="text-end">
+                                    <div class="badge">
+                                        Rp 150.000
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        @endfor
+                    </tbody>
+                </table>
+            </div>
         </div>
         <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
-            <table class="table">
-                <tbody>
-                    @for ($i = 0; $i < 10; $i++)
-                        <tr>
-                            <td>{{ $i + 1 }}</td>
-                            <td>
-                                Konsultasi Antar Sub Spesialis Umum
-                            </td>
-                            <td class="text-end">
-                                <div class="badge">
-                                    Rp 65.000
-                                </div>
-                            </td>
-                            <td></td>
-                        </tr>
-                    @endfor
-                </tbody>
-            </table>
+            <div class="table-wrapper">
+                <table class="table">
+                    <tbody>
+                        @for ($i = 0; $i < 10; $i++)
+                            <tr>
+                                <td>{{ $i + 1 }}</td>
+                                <td>
+                                    Konsultasi Antar Sub Spesialis Umum
+                                </td>
+                                <td class="text-end">
+                                    <div class="badge">
+                                        Rp 65.000
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        @endfor
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
