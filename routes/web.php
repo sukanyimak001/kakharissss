@@ -61,3 +61,8 @@ Route::get('/news/{any}', function () {
 Route::get('/register', function () {
     return view('welcome');
 });
+
+Route::name('dashboard.')->prefix('dashboard')->group(function () {
+    Route::view('/', 'dashboard.home')->name('dashboard.home');
+    Route::view('/profile', 'dashboard.profile')->name('dashboard.profile');
+});

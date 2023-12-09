@@ -1,6 +1,7 @@
 @use './pages/auth_page';
 @use './pages/home_page';
 @use './pages/news_page';
+@use './pages/dashboard';
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body {
     font-family: 'Poppins', sans-serif;
