@@ -37,6 +37,24 @@ Route::get('/news/sakip', function () {
 Route::get('/news/indicator', function () {
     return view('/news/news_indicator_page');
 });
+Route::get('/news/public-service', function () {
+    return view('/news/public_service_page');
+});
+Route::get('/news/service-flow', function () {
+    return view('/news/service_flow_page');
+});
+Route::get('/services/vitreo-retina', function () {
+    return view('/services/service_vitreo_retina_page');
+});
+Route::get('/services/sigalon', function () {
+    return view('/services/service_sigalon_page');
+});
+Route::get('/services/poli-executive', function () {
+    return view('/services/poli_executive_page');
+});
+Route::get('/services/lasik', function () {
+    return view('/services/lasik_page');
+});
 Route::get('/news/{any}', function () {
     return view('/news/detail_news_page');
 });

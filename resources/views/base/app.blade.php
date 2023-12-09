@@ -100,9 +100,12 @@
         integrity="sha512-OQlawZneA7zzfI6B1n1tjUuo3C5mtYuAWpQdg+iI9mkDoo7iFzTqnQHf+K5ThOWNJ9AbXL4+ZDwH7ykySPQc+A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
+    <script>
+        AOS.init({duration: 1000,});
+    </script>
     @stack('script')
     @yield('script')
+
 </body>
 
 </html>

@@ -11,9 +11,7 @@
         @include("home.components.gallery_section")
         @include("home.components.create_schedule")
         @include("home.components.faq")
-        <div class="section cta">
-            <img src="{{ asset('assets/images/cta.png') }}" alt="" srcset="">
-        </div>
+        @include("home.components.cta")
         @include("home.components.contact_us")
         @include("home.components.footer")
     </div>

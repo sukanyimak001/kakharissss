@@ -38,7 +38,6 @@
                         </clipPath>
                     </defs>
                 </svg>
-
             </button>
         </div>
         <div class="col-auto">

@@ -6,9 +6,7 @@
         @include("news.components.indicator_description_section")
         @include("news.components.indicator_purpose_section")
         @include("news.components.indicator_list_section")
-        <div class="section cta">
-            <img src="{{ asset('assets/images/cta.png') }}" alt="" srcset="">
-        </div>
+        @include("home.components.cta")
         @include("home.components.contact_us")
         @include("home.components.footer")
     </div>

@@ -1,4 +1,4 @@
-<div class="section contact-us">
+<div class="section contact-us" data-aos="fade-up">
     <div class="row w-100 mb-3">
         <div class="col">
             <div
