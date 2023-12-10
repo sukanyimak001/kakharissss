@@ -86,6 +86,21 @@
             <div class="label mt-0">
                 Pilih Jenis Pembayaran
             </div>
+            <div class="payment-methods">
+                <div class="option">
+                    <input type="radio">
+                    <img src="{{ asset('assets/images/gopay.png') }}" alt="">
+                    <div class="divider"></div>
+                    <div class="content">
+                        <div class="title">
+                            Gopay
+                        </div>
+                        <div class="text">
+                            +6298*****91
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="col">
             <div class="summary">

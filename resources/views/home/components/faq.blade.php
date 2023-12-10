@@ -1,4 +1,4 @@
-<div class="section faq">
+<div class="section faq" data-aos="fade-up">
     <p class="title mb-4">
         Frequently Asked Questions
     </p>

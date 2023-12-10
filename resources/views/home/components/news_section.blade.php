@@ -1,4 +1,4 @@
-<div class="section news">
+<div class="section news" data-aos="fade-up">
     <div class="heading">
         Berita Terbaru
     </div>

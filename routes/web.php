@@ -13,53 +13,33 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/login', function () {
     return view('/auth/login_page');
 });
-Route::get('/home', function () {
-    return view('/home/home_page');
-});
-Route::get('/news', function () {
-    return view('/news/news_page');
-});
-Route::get('/news/leaflet', function () {
-    return view('/news/news_leaflet_page');
-});
-Route::get('/news/survey', function () {
-    return view('/news/news_survey_page');
-});
-Route::get('/news/rates', function () {
-    return view('/news/service_rates_page');
-});
-Route::get('/news/sakip', function () {
-    return view('/news/sakip_page');
-});
-Route::get('/news/indicator', function () {
-    return view('/news/news_indicator_page');
-});
-Route::get('/news/public-service', function () {
-    return view('/news/public_service_page');
-});
-Route::get('/news/service-flow', function () {
-    return view('/news/service_flow_page');
-});
-Route::get('/services/vitreo-retina', function () {
-    return view('/services/service_vitreo_retina_page');
-});
-Route::get('/services/sigalon', function () {
-    return view('/services/service_sigalon_page');
-});
-Route::get('/services/poli-executive', function () {
-    return view('/services/poli_executive_page');
-});
-Route::get('/services/lasik', function () {
-    return view('/services/lasik_page');
-});
-Route::get('/news/{any}', function () {
-    return view('/news/detail_news_page');
-});
+
 Route::get('/register', function () {
     return view('welcome');
+});
+
+Route::view('/', 'home.home_page')->name('landing');
+
+Route::name('news.')->prefix('news')->group(function () {
+    Route::view('/', 'news.news_page')->name('news.index');
+    Route::view('/leaflet', 'news.leaflet_page')->name('news.leaflet');
+    Route::view('/survey', 'news.survey_page')->name('news.survey');
+    Route::view('/rates', 'news.service_rates_page')->name('news.rates');
+    Route::view('/sakip', 'news.sakip_page')->name('news.sakip');
+    Route::view('/indicator', 'news.news_indicator_page')->name('news.indicator');
+    Route::view('/public-service', 'news.public_service_page')->name('news.public-service');
+    Route::view('/service-flow', 'news.service_flow_page')->name('news.service-flow');
+    Route::view('/{any}', 'news.detail_news_page')->name('news.details');
+});
+
+Route::name('services.')->prefix('services')->group(function () {
+    Route::view('/vitreo-retina', 'services.service_vitreo_retina_page')->name('services.vitreo-retina');
+    Route::view('/sigalon', 'services.service_sigalon_page')->name('services.sigalon');
+    Route::view('/poli-executive', 'services.poli_executive_page')->name('services.poli-executive');
+    Route::view('/lasik', 'services.lasik_page')->name('services.lasik');
 });
 
 Route::name('dashboard.')->prefix('dashboard')->group(function () {

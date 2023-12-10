@@ -115,7 +115,7 @@
                                     18 Menit yang lalu
                                 </div>
                                 <div class="col-auto">
-                                    <div class="read-more">
+                                    <a class="read-more" href="/news/mengenal-deteksi-dini-pada-penyakit-stroke">
                                         Baca Selengkapnya
                                         <svg width="28" height="29" viewBox="0 0 28 29" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -133,7 +133,7 @@
                                                 </clipPath>
                                             </defs>
                                         </svg>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>

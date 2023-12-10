@@ -1,4 +1,4 @@
-<div class="section specialist">
+<div class="section specialist" data-aos="fade-up">
     <div style="width: 100%; text-align: center"><span
             style="color: #0F21FF; font-size: 32px; font-family: Poppins; font-weight: 600; line-height: 41.60px; word-wrap: break-word">Ahli
             Kesehatan</span><span

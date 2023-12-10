@@ -39,28 +39,129 @@
         </div>
     </div>
     <div class="navbar">
-        <img class="logo" src="{{ asset("assets/images/logo.png") }}" alt="" srcset="">
+        <img class="logo" src="{{ asset('assets/images/logo.png') }}" alt="" srcset="">
         <div class="nav-items">
-            <div class="nav-item active">
+            <div class="nav-item {{ Route::is('landing') ? 'active' : '' }}">
                 Beranda
             </div>
-            <div class="nav-item">
-                Layanan Unggulan
+            <div class="nav-item {{ Route::is('service.*') ? 'active' : '' }}">
+                <div class="dropdown">
+                    <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Layanan Unggulan
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">LASIK</a></li>
+                        <li><a class="dropdown-item" href="#">Vitero Retina</a></li>
+                        <li><a class="dropdown-item" href="#">Poli Eksekutif (VIP)</a></li>
+                        <li><a class="dropdown-item" href="#">SIGALON</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="nav-item">
-                Fasilitas Layanan
+                <div class="dropdown">
+                    <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Fasilitas Layanan
+                    </div>
+                    <ul class="dropdown-menu">
+                        <div class="mega-menu">
+                            <div class="highlighted">
+                                <a href="">
+                                    <div class="title">
+                                        Pelayanan Medis
+                                    </div>
+
+                                    <div class="text">
+                                        RSMM berkomitmen untuk memberikan pelayanan medis berkualitas kepada pasien.
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="title">
+                                        Fasilitas Penunjang
+                                    </div>
+                                    <div class="text">
+                                        RSMM Jawa Timur juga menawarkan beragam fasilitas penunjang yang mendukung
+                                        proses perawatan mata.
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="list">
+                                <div class="label">Fasilitas Penunjang</div>
+                                <li><a class="dropdown-item" href="#">Instalasi Farmasi</a></li>
+                                <li><a class="dropdown-item" href="#">Instalasi Laboratorium</a></li>
+                                <li><a class="dropdown-item" href="#">Instalasi CSSD</a></li>
+                                <li><a class="dropdown-item" href="#">Unit Diagnostik</a></li>
+                                <li><a class="dropdown-item" href="#">Unit Laundry and Linen</a></li>
+                                <li><a class="dropdown-item" href="#">Unit Gizi</a></li>
+                                <li><a class="dropdown-item" href="#">Optik</a></li>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-item {{ Route::is('news.*') ? 'active' : '' }}">
+                <div class="dropdown">
+                    <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Berita & Informasi
+                    </div>
+                    <ul class="dropdown-menu">
+                        <div class="mega-menu">
+                            <div class="highlighted">
+                                <a href="">
+                                    <div class="title">
+                                        Berita & Informasi
+                                    </div>
+
+                                    <div class="text">
+                                        Temukan berita terkini dan wawasan yang relevan untuk menjaga Anda tetap
+                                        informasi. </div>
+                                </a>
+                                <a href="">
+                                    <div class="title">
+                                        Informasi Publik
+                                    </div>
+                                    <div class="text">
+                                        Temukan informasi sehingga Anda dapat merasa lebih terhubung dengan layanan
+                                        kesehatan mata yang kami sediakan.
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="list">
+                                <div class="label">Berita & Informasi</div>
+                                <li><a class="dropdown-item" href="#">Pengumuman Terbaru</a></li>
+                                <li><a class="dropdown-item" href="#">Berita & Artikel Kesehatan</a></li>
+                                <li><a class="dropdown-item" href="#">Leaflet</a></li>
+                                <li><a class="dropdown-item" href="#">Rekrutmen</a></li>
+                                <li><a class="dropdown-item" href="#">Seminar/Webinar</a></li>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
             </div>
             <div class="nav-item">
-                Berita & Informasi
-            </div>
-            <div class="nav-item">
-                PPID
+                <div class="dropdown">
+                    <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        PPID
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profil PPID</a></li>
+                        <li><a class="dropdown-item" href="#">Layanan Informasi PPID</a></li>
+                        <li><a class="dropdown-item" href="#">Daftar Informasi PPID</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="nav-item">
                 Zona Integritas
             </div>
             <div class="nav-item">
-                Saran & Pengaduan
+                <div class="dropdown">
+                    <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Saran & Pengaduan
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Pengaduan</a></li>
+                        <li><a class="dropdown-item" href="#">Kontak</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

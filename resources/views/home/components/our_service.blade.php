@@ -1,4 +1,4 @@
-<div class="section our-service">
+<div class="section our-service" data-aos="fade-up">
     <div
         style="width: 100%; margin-bottom: 12px; color: #101828; font-size: 24px; font-family: Poppins; font-weight: 600; line-height: 31.20px; word-wrap: break-word">
         Layanan Kami</div>

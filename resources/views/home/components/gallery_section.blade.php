@@ -1,9 +1,8 @@
-<div class="section gallery row">
+<div class="section gallery row" data-aos="fade-up">
     <div class="col">
         <div
             style="margin-bottom: 32px; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; background: rgba(15, 33, 255, 0.10); border-radius: 32px; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
-            <div
-                style="color: #0F21FF; font-size: 14px; font-weight: 600; line-height: 19.60px; word-wrap: break-word">
+            <div style="color: #0F21FF; font-size: 14px; font-weight: 600; line-height: 19.60px; word-wrap: break-word">
                 Galeri Foto 📸
             </div>
         </div>
@@ -14,7 +13,8 @@
                 style="color: black; font-size: 32px; font-weight: 400; line-height: 41.60px;">
                 proses Pengobatan kami</span>
         </div>
-        <div style="margin-top: 24px; opacity: 0.50; color: black; font-size: 16px; font-weight: 400; line-height: 25.60px;">
+        <div
+            style="margin-top: 24px; opacity: 0.50; color: black; font-size: 16px; font-weight: 400; line-height: 25.60px;">
             Kami bangga membagikan pengalaman perawatan yang berhasil dan perkembangan positif yang dicapai oleh
             pasien-pasien kami.</div>
 
@@ -37,6 +37,60 @@
         </button>
     </div>
     <div class="col-auto">
-        <img style="height: 473px;" src="{{ asset('assets/images/gallery.png') }}" alt="">
+        <div id="carouselExampleControls" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <figure class="mini">
+                        <img src="{{ asset('assets/images/slide1.png') }}" class="d-block" alt="...">
+                    </figure>
+                    <figure>
+                        <img src="{{ asset('assets/images/slide2.png') }}" class="d-block" alt="...">
+                    </figure>
+                </div>
+                <div class="carousel-item">
+                    <figure class="mini">
+                        <img src="{{ asset('assets/images/slide2.png') }}" class="d-block" alt="...">
+                    </figure>
+                    <figure>
+                        <img src="{{ asset('assets/images/slide3.png') }}" class="d-block" alt="...">
+                    </figure>
+                </div>
+                <div class="carousel-item">
+                    <figure class="mini">
+                        <img src="{{ asset('assets/images/slide3.png') }}" class="d-block" alt="...">
+                    </figure>
+                    <figure>
+                        <img src="{{ asset('assets/images/slide4.png') }}" class="d-block" alt="...">
+                    </figure>
+                </div>
+                <div class="carousel-item">
+                    <figure class="mini">
+                        <img src="{{ asset('assets/images/slide4.png') }}" class="d-block" alt="...">
+                    </figure>
+                    <figure>
+                        <img src="{{ asset('assets/images/slide5.png') }}" class="d-block" alt="...">
+                    </figure>
+                </div>
+                <div class="carousel-item">
+                    <figure class="mini">
+                        <img src="{{ asset('assets/images/slide5.png') }}" class="d-block" alt="...">
+                    </figure>
+                    <figure>
+                        <img src="{{ asset('assets/images/slide1.png') }}" class="d-block" alt="...">
+                    </figure>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        {{-- <img style="height: 473px;" src="{{ asset('assets/images/gallery.png') }}" alt=""> --}}
     </div>
 </div>
