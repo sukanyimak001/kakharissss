@@ -64,5 +64,8 @@ Route::get('/register', function () {
 
 Route::name('dashboard.')->prefix('dashboard')->group(function () {
     Route::view('/', 'dashboard.home')->name('dashboard.home');
+    Route::view('/service', 'dashboard.service')->name('dashboard.service');
+    Route::view('/pdf', 'dashboard.download_pdf')->name('dashboard.pdf');
+    Route::view('/service/payment', 'dashboard.payment')->name('dashboard.payment');
     Route::view('/profile', 'dashboard.profile')->name('dashboard.profile');
 });

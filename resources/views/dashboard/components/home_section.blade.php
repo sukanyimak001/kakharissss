@@ -1,7 +1,7 @@
 <div class="section dashboard-home">
     <div class="row">
         <div class="col">
-            <img src="{{ asset("assets/images/dashboard-header.png") }}" width="100%">
+            <img src="{{ asset('assets/images/dashboard-header.png') }}" width="100%">
             <div class="table-wrapper">
                 <div class="title">
                     History Booking Antrian
@@ -33,7 +33,7 @@
                                     </span>
                                 </td>
                                 <td>
-                                    <div class="badge">
+                                    <a class="badge" href="/dashboard/pdf" target="_blank">
                                         <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path d="M8.35645 10.5753L8.35645 1" stroke="#0F21FF" stroke-width="1.5"
@@ -46,7 +46,7 @@
                                                 stroke-linejoin="round" />
                                         </svg>
                                         Download
-                                    </div>
+                                    </a>
                                 </td>
                             </tr>
                         @endfor

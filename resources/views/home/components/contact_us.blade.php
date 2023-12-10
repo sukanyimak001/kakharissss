@@ -72,7 +72,7 @@
         </div>
         <div class="col">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.544105082106!2d112.71750877476073!3d-7.292595192714902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb182df68e23%3A0x7da2ab4000a06cc3!2sCiputra%20World%20Surabaya!5e0!3m2!1sid!2sid!4v1701447732862!5m2!1sid!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.2503239009284!2d112.72317397476114!3d-7.325756092682509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb648573d679%3A0x5241b339541f815a!2sRumah%20Sakit%20Mata%20Masyarakat%20Jawa%20Timur%20(RSMM%20Jawa%20Timur)%20-%20IGD%20buka%2024%20Jam.!5e0!3m2!1sid!2sid!4v1702202480314!5m2!1sid!2sid"
                 width="100%" height="100%" style="border:0; border-radius: 32px;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>

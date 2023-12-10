@@ -3,6 +3,6 @@
 @section('content')
     <div class="dashboard">
         @include("home.components.header")
-        @include("dashboard.components.profile_section")
+        @include("dashboard.components.payment_section")
     </div>
 @endsection
