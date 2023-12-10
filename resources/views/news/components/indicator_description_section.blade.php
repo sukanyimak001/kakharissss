@@ -1,4 +1,4 @@
-<div class="section about-leaflet mb-0 mt-2">
+<div class="section about-leaflet mb-0 mt-2" data-aos="fade-up">
     <div class="row align-items-center">
         <div class="col">
             <div style="width: 100%"><span

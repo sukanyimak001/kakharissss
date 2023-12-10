@@ -22,7 +22,7 @@
                 Kami memberikan Anda perawatan mata terbaik yang Anda butuhkan. Dengan komitmen untuk menyediakan
                 layanan kesehatan mata terdepan dan terpercaya, kami mengutamakan visi Anda.
             </div>
-            <button class="send-message" style="margin-top: 32px;">
+            <button onclick="window.location='/login'" class="send-message" style="margin-top: 32px;">
                 Daftar Online
                 <svg width="29" height="28" viewBox="0 0 29 28" fill="none"
                     xmlns="http://www.w3.org/2000/svg">

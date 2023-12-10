@@ -1,4 +1,4 @@
-<div class="section survey news leaflet-list mb-3 service-rates">
+<div class="section survey news leaflet-list mb-3 service-rates" data-aos="fade-up">
     <div style="width: 100%; text-align: center">
         <span
             style="color: black; font-size: 32px; font-family: Poppins; font-weight: 400; line-height: 41.60px; word-wrap: break-word">Standar

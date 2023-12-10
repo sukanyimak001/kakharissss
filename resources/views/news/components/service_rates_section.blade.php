@@ -1,4 +1,4 @@
-<div class="section service-rates news leaflet-list mb-3">
+<div class="section service-rates news leaflet-list mb-3" data-aos="fade-up">
     <div style="width: 100%; text-align: center; margin-bottom: 8px;"><span
             style="color: #0F21FF; font-size: 32px; font-family: Poppins; font-weight: 600; line-height: 41.60px; word-wrap: break-word">Tarif
             Layanan</span><span

@@ -1,27 +1,29 @@
-<div class="section news my-0">
+<div class="section news my-0" data-aos="fade-up">
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Pengumuman
+            <button class="nav-link {{ Request::get('page') == 'latest-info' ? 'active' : '' }}" id="latest-info"
+                data-bs-toggle="tab" data-bs-target="#latest-info-pane" type="button" role="tab"
+                aria-controls="latest-info-pane" aria-selected="{{ Request::get('page') == 'latest-info' ? 'true' : 'false' }}">Pengumuman
                 Terbaru</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
-                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Berita & Artikel
+            <button class="nav-link {{ Request::get('page') == 'news-and-article' ? 'active' : '' }}" id="news-and-article" data-bs-toggle="tab" data-bs-target="#news-and-article-pane"
+                type="button" role="tab" aria-controls="news-and-article-pane" aria-selected="{{ Request::get('page') == 'news-and-article' ? 'true' : 'false' }}">Berita &
+                Artikel
                 Kesehatan</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
-                type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Rekrutmen</button>
+            <button class="nav-link {{ Request::get('page') == 'contact-tab' ? 'active' : '' }}" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="{{ Request::get('page') == 'contact-tab' ? 'true' : 'false' }}">Rekrutmen</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane"
-                type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Seminar/Webinar
+            <button class="nav-link {{ Request::get('page') == 'webinar' ? 'active' : '' }}" id="webinar" data-bs-toggle="tab" data-bs-target="#webinar-pane" type="button"
+                role="tab" aria-controls="webinar-pane" aria-selected="{{ Request::get('page') == 'webinar' ? 'true' : 'false' }}">Seminar/Webinar
             </button>
         </li>
     </ul>
     <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+        <div class="tab-pane fade {{ Request::get('page') == 'latest-info' ? 'active show' : '' }}" id="latest-info-pane" role="tabpanel" aria-labelledby="latest-info"
             tabindex="0">
             <div class="news-grid mt-3">
                 @for ($i = 0; $i < 6; $i++)
@@ -89,7 +91,7 @@
                 </div>
             </div>
         </div>
-        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+        <div class="tab-pane fade {{ Request::get('page') == 'news-and-article' ? 'active show' : '' }}" id="news-and-article-pane" role="tabpanel" aria-labelledby="news-and-article"
             tabindex="0">
             <div class="news-list">
                 @for ($i = 0; $i < 3; $i++)
@@ -141,7 +143,7 @@
                 @endfor
             </div>
         </div>
-        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+        <div class="tab-pane fade {{ Request::get('page') == 'contact-tab' ? 'active show' : '' }}" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
             tabindex="0">
             <div class="news-list">
                 @for ($i = 0; $i < 3; $i++)
@@ -193,8 +195,7 @@
                 @endfor
             </div>
         </div>
-        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
-            tabindex="0">
+        <div class="tab-pane fade {{ Request::get('page') == 'webinar' ? 'active show' : '' }}" id="webinar-pane" role="tabpanel" aria-labelledby="webinar" tabindex="0">
             <div class="news-grid mt-3">
                 @for ($i = 0; $i < 6; $i++)
                     <div class="grid-item">

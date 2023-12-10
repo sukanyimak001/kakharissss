@@ -41,31 +41,33 @@
     <div class="navbar">
         <img class="logo" src="{{ asset('assets/images/logo.png') }}" alt="" srcset="">
         <div class="nav-items">
-            <div class="nav-item {{ Route::is('landing') ? 'active' : '' }}">
+            <a href="/" class="nav-item {{ Route::is('landing') ? 'active' : '' }}">
                 Beranda
-            </div>
-            <div class="nav-item {{ Route::is('service.*') ? 'active' : '' }}">
+            </a>
+            <div class="nav-item {{ Route::is('services.*') ? 'active' : '' }}">
                 <div class="dropdown">
                     <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Layanan Unggulan
                     </div>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">LASIK</a></li>
-                        <li><a class="dropdown-item" href="#">Vitero Retina</a></li>
-                        <li><a class="dropdown-item" href="#">Poli Eksekutif (VIP)</a></li>
-                        <li><a class="dropdown-item" href="#">SIGALON</a></li>
+                        <li><a class="dropdown-item" href="/services/lasik">LASIK</a></li>
+                        <li><a class="dropdown-item" href="/services/vitreo-retina">Vitero Retina</a></li>
+                        <li><a class="dropdown-item" href="/services/poli-executive">Poli Eksekutif (VIP)</a></li>
+                        <li><a class="dropdown-item" href="/services/sigalon">SIGALON</a></li>
                     </ul>
                 </div>
             </div>
             <div class="nav-item">
                 <div class="dropdown">
-                    <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                        data-bs-auto-close="outside">
                         Fasilitas Layanan
                     </div>
                     <ul class="dropdown-menu">
-                        <div class="mega-menu">
+                        <div class="mega-menu accordion" id="fasilitasLayanan">
                             <div class="highlighted">
-                                <a href="">
+                                <a id="pelayananMedisHead" data-bs-toggle="collapse" data-bs-target="#pelayananMedis"
+                                    aria-expanded="true" aria-controls="fasilitasPenunjang">
                                     <div class="title">
                                         Pelayanan Medis
                                     </div>
@@ -74,7 +76,9 @@
                                         RSMM berkomitmen untuk memberikan pelayanan medis berkualitas kepada pasien.
                                     </div>
                                 </a>
-                                <a href="">
+                                <a class="collapsed" id="fasilitasPenunjangHead" data-bs-toggle="collapse"
+                                    data-bs-target="#fasilitasPenunjang" aria-expanded="true"
+                                    aria-controls="fasilitasPenunjang">
                                     <div class="title">
                                         Fasilitas Penunjang
                                     </div>
@@ -84,7 +88,16 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="list">
+                            <div class="list accordion-collapse collapse show" id="pelayananMedis"
+                                aria-labelledby="pelayananMedisHead" data-bs-parent="#fasilitasLayanan">
+                                <div class="label">Pelayanan Medis</div>
+                                <li><a class="dropdown-item" href="#">Gawat Darurat</a></li>
+                                <li><a class="dropdown-item" href="#">Rawat Jalan</a></li>
+                                <li><a class="dropdown-item" href="#">Bedah Sentral</a></li>
+                                <li><a class="dropdown-item" href="#">Rawat Inap</a></li>
+                            </div>
+                            <div class="list collapse collapse-horizontal" id="fasilitasPenunjang"
+                                aria-labelledby="fasilitasPenunjangHead" data-bs-parent="#fasilitasLayanan">
                                 <div class="label">Fasilitas Penunjang</div>
                                 <li><a class="dropdown-item" href="#">Instalasi Farmasi</a></li>
                                 <li><a class="dropdown-item" href="#">Instalasi Laboratorium</a></li>
@@ -100,13 +113,16 @@
             </div>
             <div class="nav-item {{ Route::is('news.*') ? 'active' : '' }}">
                 <div class="dropdown">
-                    <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                        data-bs-auto-close="outside">
                         Berita & Informasi
                     </div>
-                    <ul class="dropdown-menu">
-                        <div class="mega-menu">
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <div class="mega-menu accordion" id="beritaInformasi">
                             <div class="highlighted">
-                                <a href="">
+                                <a id="beritaInformasiSectionHead" data-bs-toggle="collapse"
+                                    data-bs-target="#beritaInformasiSection" aria-expanded="true"
+                                    aria-controls="informasiPublik">
                                     <div class="title">
                                         Berita & Informasi
                                     </div>
@@ -115,7 +131,9 @@
                                         Temukan berita terkini dan wawasan yang relevan untuk menjaga Anda tetap
                                         informasi. </div>
                                 </a>
-                                <a href="">
+                                <a class="collapsed" id="informasiPublikHead" data-bs-toggle="collapse"
+                                    data-bs-target="#informasiPublik" aria-expanded="true"
+                                    aria-controls="informasiPublik">
                                     <div class="title">
                                         Informasi Publik
                                     </div>
@@ -125,13 +143,25 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="list">
+                            <div class="list accordion-collapse collapse show" id="beritaInformasiSection"
+                                aria-labelledby="beritaInformasiSectionHead" data-bs-parent="#beritaInformasi">
                                 <div class="label">Berita & Informasi</div>
-                                <li><a class="dropdown-item" href="#">Pengumuman Terbaru</a></li>
-                                <li><a class="dropdown-item" href="#">Berita & Artikel Kesehatan</a></li>
-                                <li><a class="dropdown-item" href="#">Leaflet</a></li>
+                                <li><a class="dropdown-item" href="/news?page=latest-info">Pengumuman Terbaru</a></li>
+                                <li><a class="dropdown-item" href="/news?page=news-and-article">Berita & Artikel Kesehatan</a></li>
+                                <li><a class="dropdown-item" href="/news/leaflet">Leaflet</a></li>
                                 <li><a class="dropdown-item" href="#">Rekrutmen</a></li>
-                                <li><a class="dropdown-item" href="#">Seminar/Webinar</a></li>
+                                <li><a class="dropdown-item" href="/news?page=webinar">Seminar/Webinar</a></li>
+                            </div>
+                            <div class="list collapse collapse-horizontal" id="informasiPublik"
+                                aria-labelledby="informasiPublikHead" data-bs-parent="#beritaInformasi">
+                                <div class="label">Informasi Publik</div>
+                                <li><a class="dropdown-item" href="/news/service-flow">Alur Pelayanan</a></li>
+                                <li><a class="dropdown-item" href="/news/rates">Tarif Layanan</a></li>
+                                <li><a class="dropdown-item" href="/news/survey">Survey Kepuasan Masyarakat</a></li>
+                                <li><a class="dropdown-item" href="/news/indicator">Indikator Mutu</a></li>
+                                <li><a class="dropdown-item" href="#">Rencana Pengembangan</a></li>
+                                <li><a class="dropdown-item" href="/news/public-service">Standar Pelayanan Publik</a></li>
+                                <li><a class="dropdown-item" href="/news/sakip">SAKIP</a></li>
                             </div>
                         </div>
                     </ul>

@@ -1,4 +1,4 @@
-<div class="section poli-executive">
+<div class="section poli-executive" data-aos="fade-up">
     <div class="title text-center">
         <span>Poli Eksekutif</span> Rumah Sakit Mata Jawa Timur
     </div>
@@ -20,7 +20,7 @@
 </div>
 
 <div class="section poli-services">
-    <div class="row mb-2">
+    <div class="row mb-2" data-aos="fade-up">
         <div class="col">
             <div
                 style="width: 100%; color: black; font-size: 24px; font-family: Poppins; font-weight: 400; line-height: 31.20px; word-wrap: break-word">
@@ -36,7 +36,7 @@
         </div>
     </div>
     <div class="services">
-        <div class="service-item fill">
+        <div class="service-item fill" data-aos="fade-right">
             <div class="row">
                 <div class="col">
                     <div class="title">
@@ -48,7 +48,7 @@
                         <br> dengan aktivitas Anda. Kami mengutamakan efisiensi
                         <br> tanpa mengurangi kualitas perawatan
                     </div>
-                    <button class="send-message" style="margin-top: 32px;">
+                    <button onclick="window.location='/login'" class="send-message" style="margin-top: 32px;">
                         Daftar Online
                         <svg width="29" height="28" viewBox="0 0 29 28" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -72,7 +72,7 @@
                 </div>
             </div>
         </div>
-        <div class="service-item small">
+        <div class="service-item small" data-aos="fade-left">
             <img src="{{ asset('assets/images/user-ilust.png') }}" width="92px">
             <div>
                 <div class="title">
@@ -87,7 +87,7 @@
         </div>
     </div>
     <div class="services">
-        <div class="service-item small">
+        <div class="service-item small" data-aos="fade-right">
             <img src="{{ asset('assets/images/user-ilust2.png') }}" width="92px">
             <div>
                 <div class="title">
@@ -99,7 +99,7 @@
                 </div>
             </div>
         </div>
-        <div class="service-item fill">
+        <div class="service-item fill" data-aos="fade-left">
             <div class="row">
                 <div class="col">
                     <div class="title">

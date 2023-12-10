@@ -1,19 +1,211 @@
-.auth-page{
+.auth-page {
     display: flex;
     flex-direction: row;
-    
-    .form-section{
+
+    .form-section {
         flex: 1;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        .form-container {
+            width: 456px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .logo {
+                width: 70px;
+                height: 44px;
+                align-self: flex-start;
+                margin-bottom: 32px;
+            }
+
+            .title {
+                align-self: flex-start;
+                color: var(--Black, #181818);
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 120%;
+            }
+
+            .warning {
+                border-radius: 8px;
+                border: 1px solid var(--warning-200, #FEDF89);
+                background: var(--warning-25, #FFFCF5);
+                display: flex;
+                padding: 12px;
+                align-items: flex-start;
+                gap: 8px;
+                align-self: stretch;
+
+                margin-top: 14px;
+                margin-bottom: 39px;
+
+                p {
+                    flex: 1;
+                    color: var(--warning-600, #DC6803);
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 140%;
+                    margin: 0px;
+                }
+            }
+
+            .text {
+                color: var(--Gray, #8E8E8F);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 140%;
+
+                span,
+                a {
+                    color: #0F21FF;
+                    text-decoration: none;
+                }
+            }
+
+            .input-group {
+                border-radius: 10px;
+                border: 1.5px solid var(--Light-Grey, #F0EFF2);
+                overflow: hidden;
+                padding: 14px 45px;
+
+                .input-group-text {
+                    border: none;
+                    background-color: white;
+                    padding: 0px;
+                }
+
+                input {
+                    border: none;
+                    background-color: white;
+                    outline: none !important;
+                    outline: none;
+
+                    color: var(--Gray, #000);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 140%;
+                    padding: 0px;
+                    padding-left: 14px;
+
+                    &::placeholder {
+                        color: var(--Gray, #8E8E8F);
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 140%;
+                    }
+                }
+            }
+
+            .captcha {
+                display: flex;
+                gap: 16px;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    height: 107px;
+                }
+            }
+
+            .secondary-button {
+                border: none;
+                outline: none;
+                display: flex;
+                padding: 12px 36px;
+                justify-content: center;
+                align-items: center;
+                gap: 12px;
+                flex: 1 0 0;
+                align-self: flex-start;
+                border-radius: 32px;
+                background: #F0EFF2;
+                text-decoration: none;
+                color: #8E8E8F;
+
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 140%;
+            }
+            .primary-button {
+                border: none;
+                outline: none;
+                display: flex;
+                padding: 12px 36px;
+                justify-content: center;
+                align-items: center;
+                gap: 12px;
+                flex: 1 0 0;
+                align-self: flex-start;
+                border-radius: 32px;
+                background: #0F21FF;
+                text-decoration: none;
+                color: #FFF;
+
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 140%;
+            }
+
+            .bs-stepper {
+                align-self: flex-start;
+
+                .step {
+                    button {
+                        padding: 0px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+
+                        .bs-stepper-circle {
+                            border-radius: 24px;
+                            background: var(--gray-50, #F9FAFB);
+                            color: var(--gray-400, #98A2B3);
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 140%;
+                        }
+
+                        .bs-stepper-label {
+                            color: var(--Gray, #8E8E8F);
+                            font-size: 16px;
+                            font-weight: 400;
+                            // line-height: 140%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+
+                    &.active {
+                        button {
+                            .bs-stepper-circle {
+                                background: #0F21FF;
+                                color: white;
+                            }
+
+                            .bs-stepper-label {
+                                color: var(--base-black, #000);
+                                font-size: 16px;
+                                font-weight: 500;
+                                line-height: 140%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
-    .banner{
+    .banner {
         flex: 1;
-        
-        img{
+
+        img {
             width: 100%;
             height: 100%;
             object-fit: cover;

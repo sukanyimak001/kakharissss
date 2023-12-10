@@ -1,4 +1,4 @@
-<div class="section leaflet-list mt-5">
+<div class="section leaflet-list mt-5" data-aos="fade-up">
     <div class="row mb-3">
         <div class="col">
             <div

@@ -1,4 +1,4 @@
-<div class="section news-detail mb-0">
+<div class="section news-detail mb-0" data-aos="fade-up">
     <div class="date">
         Jumat, 5 November 2023 14:27
     </div>

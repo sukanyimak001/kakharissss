@@ -1,4 +1,4 @@
-<div class="section search mb-3">
+<div class="section search mb-3" data-aos="fade-up">
     <img class="background" src="{{ asset('assets/images/search-background.svg') }}" alt="" srcset="">
     <div class="content">
         <div class="row">

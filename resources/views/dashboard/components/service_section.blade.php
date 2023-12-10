@@ -265,7 +265,7 @@
                     <div class="cancel-btn" data-bs-dismiss="modal">
                         Batal
                     </div>
-                    <button class="send-message" data-bs-dismiss="modal">
+                    <button class="send-message" onclick="window.location = '/dashboard/service/payment'">
                         Ya, Buat Janji
                         <svg width="29" height="28" viewBox="0 0 29 28" fill="none"
                             xmlns="http://www.w3.org/2000/svg">

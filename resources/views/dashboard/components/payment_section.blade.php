@@ -100,6 +100,32 @@
                         </div>
                     </div>
                 </div>
+                <div class="option">
+                    <input type="radio">
+                    <img src="{{ asset('assets/images/shopeepay.png') }}" alt="">
+                    <div class="divider"></div>
+                    <div class="content">
+                        <div class="title">
+                            Shopeepay
+                        </div>
+                        <div class="text">
+                            +6298*****91
+                        </div>
+                    </div>
+                </div>
+                <div class="option">
+                    <input type="radio">
+                    <img src="{{ asset('assets/images/ovo.png') }}" alt="">
+                    <div class="divider"></div>
+                    <div class="content">
+                        <div class="title">
+                            OVO
+                        </div>
+                        <div class="text">
+                            +6298*****91
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col">
@@ -124,30 +150,47 @@
             </div>
         </div>
     </div>
+    <div class="actions">
+        <div class="cancel" onclick="history.back()">Batal</div>
+        <div class="pay-now" data-bs-toggle="modal" data-bs-target="#paymentSuccessModal">
+            Bayar Sekarang
+            <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.75" width="28" height="28" rx="14" fill="white" fill-opacity="0.25" />
+                <g clip-path="url(#clip0_561_1520)">
+                    <path
+                        d="M11.6697 20.0062C11.9963 20.3329 12.523 20.3329 12.8497 20.0062L18.3897 14.4662C18.6497 14.2062 18.6497 13.7862 18.3897 13.5262L12.8497 7.98621C12.523 7.65954 11.9963 7.65954 11.6697 7.98621C11.343 8.31288 11.343 8.83954 11.6697 9.16621L16.4963 13.9995L11.663 18.8329C11.343 19.1529 11.343 19.6862 11.6697 20.0062Z"
+                        fill="white" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_561_1520">
+                        <rect width="16" height="16" fill="white" transform="translate(6.75 6)" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+    </div>
 </div>
 
 
 <!-- Modal -->
-<div class="modal fade" id="scheduleModal" tabindex="-1" aria-labelledby="scheduleModalLabel" aria-hidden="true">
+<div class="modal fade" id="paymentSuccessModal" tabindex="-1" aria-labelledby="paymentSuccessModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content schedule-modal">
             <div class="modal-body">
-                <img src="{{ asset('assets/images/schedule-ilust.png') }}" width="325px">
+                <img src="{{ asset('assets/images/payment-ilust.png') }}" width="325px">
                 <div style="padding: 12px 24px;">
                     <div class="title">
                         Apakah Anda Yakin untuk Membuat Janji?
                     </div>
                     <div class="subtitle">
-                        Apakah Anda yakin ingin membuat janji temu dengan Dr. Elsa Rendyta, Sp.M pada Senin, 11 November
-                        2023?
+                        Anda telah berhasil membuat janji temu dengan <span>Dr. Elsa Rendyta, Sp.M</span> pada
+                        <span>Senin, 11 November 2023</span>
                     </div>
                 </div>
                 <div class="actions">
-                    <div class="cancel-btn" data-bs-dismiss="modal">
-                        Batal
-                    </div>
-                    <button class="send-message" data-bs-dismiss="modal">
-                        Ya, Buat Janji
+                    <button class="send-message w-100" onclick="window.location='/dashboard/service'">
+                        Kembali
                         <svg width="29" height="28" viewBox="0 0 29 28" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <rect x="0.5" width="28" height="28" rx="14" fill="white"
@@ -159,7 +202,8 @@
                             </g>
                             <defs>
                                 <clipPath id="clip0_112_3187">
-                                    <rect width="16" height="16" fill="white" transform="translate(6.5 6)" />
+                                    <rect width="16" height="16" fill="white"
+                                        transform="translate(6.5 6)" />
                                 </clipPath>
                             </defs>
                         </svg>

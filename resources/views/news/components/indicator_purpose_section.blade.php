@@ -1,4 +1,4 @@
-<div class="section about-leaflet">
+<div class="section about-leaflet" data-aos="fade-up">
     <div class="row">
         <div class="col-auto">
             <img src="{{ asset('assets/images/indicator-banner.png') }}" style="width: auto;">

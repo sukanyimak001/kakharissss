@@ -10,7 +10,7 @@
                 <br> sementara lensa kontak berisiko infeksi. Dengan perkembangan teknologi,
                 <br> prosedur Lasik adalah solusi ketergantungan pada alat koreksi penglihatan.
             </div>
-            <button class="send-message" style="margin-top: 32px;">
+            <button onclick="window.location='/login'" class="send-message" style="margin-top: 32px;">
                 Daftar Online
                 <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="0.5" width="28" height="28" rx="14" fill="white" fill-opacity="0.25" />

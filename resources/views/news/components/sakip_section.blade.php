@@ -1,4 +1,4 @@
-<div class="section leaflet-list mt-5">
+<div class="section leaflet-list mt-5" data-aos="fade-up">
     <div style="width: 100%; text-align: center; margin-bottom: 12px;"><span
             style="color: #0F21FF; font-size: 32px; font-family: Poppins; font-weight: 600; line-height: 41.60px; word-wrap: break-word">Sakip</span><span
             style="color: black; font-size: 32px; font-family: Poppins; font-weight: 400; line-height: 41.60px; word-wrap: break-word">

@@ -6,7 +6,7 @@
         @for ($i = 1; $i < 11; $i++)
             <div class="grid-item">
                 <img src="{{ asset("assets/images/svc$i.png") }}" alt="">
-                <div class="text">
+                <a class="text" href="/dashboard/service/detail">
                     {{ [
                         'OP Katarak Sehari Kemarin',
                         'Operasi Hari Ini',
@@ -19,7 +19,7 @@
                         'Bedah Minor',
                         'Klinik Low Vision',
                     ][$i - 1] }}
-                </div>
+                </a>
             </div>
         @endfor
     </div>

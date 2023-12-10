@@ -72,7 +72,7 @@
                     Laser Pan-Retina Photocoagulation (PRP) dan Barrage
                 </span>
             </div>
-            <button class="send-message" style="margin-top: 32px;">
+            <button onclick="window.location='/login'" class="send-message" style="margin-top: 32px;">
                 Daftar Online Sekarang
                 <svg width="29" height="28" viewBox="0 0 29 28" fill="none"
                     xmlns="http://www.w3.org/2000/svg">

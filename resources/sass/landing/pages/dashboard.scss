@@ -108,6 +108,7 @@
                 .text {
                     position: absolute;
                     left: 0px;
+                    text-decoration: none;
                     top: 0px;
                     bottom: 0px;
                     right: 0px;
@@ -764,6 +765,7 @@
         align-items: stretch;
         gap: 16px;
         align-self: stretch;
+        height: 100%;
 
         .header {
             border-bottom: 1px solid #EEE;
@@ -807,9 +809,93 @@
         }
     }
 
-    // .payment-methods{
+    .payment-methods {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-self: stretch;
 
-    // }
+        .option {
+            border-radius: 16px;
+            border: 1px solid #EEE;
+            display: flex;
+            padding: 16px 24px;
+            align-items: center;
+            gap: 24px;
+            align-self: stretch;
+
+            .divider {
+                width: 1px;
+                height: 53px;
+                background-color: rgba(238, 238, 238, 0.93);
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+                flex: 1 0 0;
+
+                .title {
+                    color: #000;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 120%;
+                }
+
+                .subtitle {
+                    color: var(--Gray, #8E8E8F);
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 140%;
+                }
+            }
+        }
+
+    }
+
+    .actions {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 12px;
+        margin-top: 16px;
+
+        .cancel {
+            width: 242px;
+            display: flex;
+            padding: 8px 24px;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+            
+            color: var(--gray-400, #98A2B3);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 140%;
+            border-radius: 32px;
+            background: var(--gray-100, #F2F4F7);
+        }
+
+        .pay-now {
+            cursor: pointer;
+            width: 242px;
+            display: flex;
+            padding: 8px 24px;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+
+            color: #FFF;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 140%;
+            border-radius: 32px;
+            background: var(--gray-100, #0F21FF);
+        }
+    }
 }
 
 .print-pdf {
