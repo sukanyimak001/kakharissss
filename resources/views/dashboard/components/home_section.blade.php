@@ -1,7 +1,27 @@
 <div class="section dashboard-home">
     <div class="row">
         <div class="col">
-            <img src="{{ asset('assets/images/dashboard-header.png') }}" width="100%">
+            <div class="dashboard-header">
+                <img src="{{ asset('assets/images/dashboard-header.png') }}" width="100%">
+                <a class="action" href="/dashboard/service">
+                    Buat Janji
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="28" height="28" rx="14" fill="#0F21FF" fill-opacity="0.25" />
+                        <g clip-path="url(#clip0_328_1075)">
+                            <path
+                                d="M10.9197 20.0072C11.2463 20.3339 11.773 20.3339 12.0997 20.0072L17.6397 14.4672C17.8997 14.2072 17.8997 13.7872 17.6397 13.5272L12.0997 7.98719C11.773 7.66052 11.2463 7.66052 10.9197 7.98719C10.593 8.31385 10.593 8.84052 10.9197 9.16719L15.7463 14.0005L10.913 18.8339C10.593 19.1539 10.593 19.6872 10.9197 20.0072Z"
+                                fill="#0F21FF" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_328_1075">
+                                <rect width="16" height="16" fill="white" transform="translate(6 6)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                </a>
+            </div>
             <div class="table-wrapper">
                 <div class="title">
                     History Booking Antrian

@@ -134,7 +134,7 @@
                     </select>
                 </div>
             </div>
-            <button class="send-message mt-2">
+            <button class="send-message mt-2" onclick="window.location = '/login'">
                 Buat Janji Temu
                 <svg width="29" height="28" viewBox="0 0 29 28" fill="none"
                     xmlns="http://www.w3.org/2000/svg">

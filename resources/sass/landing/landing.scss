@@ -3,6 +3,27 @@
 @use './pages/news_page';
 @use './pages/dashboard';
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@media screen and (max-width: 1440px) {
+    .dashboard {
+        zoom: 0.8;
+    }
+
+    .base-page {
+        zoom: 0.8;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .dashboard {
+        zoom: 0.45;
+    }
+
+    .base-page {
+        zoom: 0.45;
+    }
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     width: 100vw;

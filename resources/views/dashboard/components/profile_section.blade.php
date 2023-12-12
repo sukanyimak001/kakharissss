@@ -9,7 +9,7 @@
                 <div class="button primary" data-bs-toggle="modal" data-bs-target="#editProfileModal">
                     Edit Profil
                 </div>
-                <div class="button danger">
+                <div class="button danger" onclick="window.location = '/'">
                     Logout
                 </div>
             </div>
