@@ -16,33 +16,33 @@
                 <div class="carousel-item {{ $i == 1 ? 'active' : '' }}">
                     <div class="specialist-container">
                         <div class="specialist-item">
-                            <img src="{{ asset('assets/images/doctor1.png') }}" alt="">
+                            <img src="{{ asset('assets/images/doctor4.png') }}" alt="">
                             <div class="title">
-                                Dr. Dimas Setya A, Sp.M
+                                Dr. Elsa Rendyta, Sp.M 
                             </div>
                             <div class="subtitle">
                                 Today 07.00 - 09.00
                             </div>
                             <div class="badge">
-                                Spesialis Mata
+                                Sub Spesialis Retina
                             </div>
                         </div>
                         <div class="specialist-item">
-                            <img src="{{ asset('assets/images/doctor2.png') }}" alt="">
+                            <img src="{{ asset('assets/images/doctor5.png') }}" alt="">
                             <div class="title">
-                                Dr. Ratna Parma J, Sp.M
+                                Dr. Pardana Dwiputra, Sp.M 
                             </div>
                             <div class="subtitle">
                                 Today 11.00 - 12.00
                             </div>
                             <div class="badge">
-                                Spesialis Mata
+                                Sub Spesialis Retina
                             </div>
                         </div>
                         <div class="specialist-item">
-                            <img src="{{ asset('assets/images/doctor3.png') }}" alt="">
+                            <img src="{{ asset('assets/images/doctor6.png') }}" alt="">
                             <div class="title">
-                                Dr. Rika Agustanti, Sp.M
+                                Dr. Yasin Fadillah, Sp.M 
                             </div>
                             <div class="subtitle">
                                 Today 08.00 - 10.00

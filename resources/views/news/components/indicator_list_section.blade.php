@@ -21,7 +21,17 @@
                 <tr>
                     <td>{{ $i + 1 }}</td>
                     <td>
-                        Kepatuhan Penggunaan Alat Pelindung Diri (APD)
+                        {{ 
+                            [
+                                "Kepatuhan Kebersihan Tangan",
+                                "Kepatuhan Penggunaan Alat Pelindung Diri (APD)",
+                                "Kepatuhan Identifikasi Pasien",
+                                "Waktu Tunggu Rawat Jalan",
+                                "Penundaan Operasi Elektif",
+                                "Kepatuhan Waktu Visite Dokter",
+                                "Pelaporan Hasil Kritis Laboratorium",
+                                "Kepatuhan Penggunaan Formularium Nasional"
+                            ][$i] }}
                     </td>
                     <td class="text-end">
                         <div class="badge">

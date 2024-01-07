@@ -18,7 +18,7 @@
     <ul class="nav nav-tabs mt-4" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Pengumuman
+                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
                 Rawat Jalan</button>
         </li>
         <li class="nav-item" role="presentation">
@@ -47,11 +47,33 @@
                             <tr>
                                 <td>{{ $i + 1 }}</td>
                                 <td>
-                                    Konsultasi Antar Sub Spesialis Umum
+                                    {{ [
+                                        'Biaya Admin Umum',
+                                        'Biaya Admin VIP',
+                                        'Konsultasi Antar Sub Spesialis Umum',
+                                        'Konsultasi Antar Sub Spesialis VIP',
+                                        'Pemeriksaan Dasar Spesialistik Reguler',
+                                        'Pemeriksaan Dasar Spesialistik VIP',
+                                        'Pemeriksaan Dasar Sub Spesialis Umum',
+                                        'Pemeriksaan Dasar Sub Spesialis VIP',
+                                        'Pemeriksaan Dasar Spesialistik Non Mata Umum',
+                                        'Pemeriksaan Dasar Spesialistik Non Mata VIP',
+                                    ][$i] }}
                                 </td>
                                 <td class="text-end">
                                     <div class="badge">
-                                        Rp 60.000
+                                        {{ [
+                                            'Rp 20.000',
+                                            'Rp 25.000',
+                                            'Rp 25.000',
+                                            'Rp 60.000',
+                                            'Rp 60.000',
+                                            'Rp 150.000',
+                                            'Rp 70.000',
+                                            'Rp 160.000',
+                                            'Rp 160.000',
+                                            'Rp 150.000',
+                                        ][$i] }}
                                     </div>
                                 </td>
                                 <td></td>

@@ -36,7 +36,7 @@
                 Pentingnya Hari Kanker Anak Sedunia adalah untuk menyebarkan kesadaran tentang kanker yang memengaruhi anak-anak, yang kadang-kadang bisa sulit didiagnosis pada tahap awal.
             </div>
         </div>
-        <div class="col recommended-news">
+        <div class="col recommended-news p-0" style="gap: 0px;">
             <div class="news-item">
                 <img src="{{ asset("assets/images/news1.png") }}" alt="">
                 <div>
@@ -47,20 +47,20 @@
                 </div>
             </div>
             <div class="news-item">
-                <img src="{{ asset("assets/images/news1.png") }}" alt="">
+                <img src="{{ asset("assets/images/news2.png") }}" alt="">
                 <div>
                     <div class="date">Januari 2023</div>
                     <div class="title">
-                        Cegah Stunting Pada Anak Dengan Konsumsi Gizi Seimbang
+                        Kunjungan Kerja Latkesmas Murnajati di Rumah Sakit Mata Masyarakat
                     </div>
                 </div>
             </div>
             <div class="news-item">
-                <img src="{{ asset("assets/images/news1.png") }}" alt="">
+                <img src="{{ asset("assets/images/news3.png") }}" alt="">
                 <div>
                     <div class="date">Januari 2023</div>
                     <div class="title">
-                        Cegah Stunting Pada Anak Dengan Konsumsi Gizi Seimbang
+                        Festival Inovasi Desa, Promosikan Inovasi di Jawa Timur
                     </div>
                 </div>
             </div>

@@ -47,15 +47,19 @@
                             Triwulan {{ ['I', 'II', 'III', 'IV'][$i % 4] }}
                         </td>
                         <td class="text-center">
-                            2022
+                            @if ($i < 4)
+                                2022
+                            @else
+                                2023
+                            @endif
                         </td>
                         <td class="text-center">
                             <div class="badge mx-5">
-                                84.10
+                                {{ ['84.10', '84.93', '94.10', '92.08', '89.32'][$i] }}
                             </div>
                         </td>
                         <td class="text-start">
-                            {{ ['B - Baik', 'A - Sangat Baik'][$i % 2] }}
+                            {{ ['B - Baik', 'A - Baik', 'A - Sangat Baik', 'A - Sangat Baik', 'A - Sangat Baik'][$i] }}
                         </td>
                     </tr>
                 @endfor

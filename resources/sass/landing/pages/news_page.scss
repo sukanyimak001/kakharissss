@@ -112,6 +112,7 @@
                     line-height: 160%;
                     letter-spacing: -0.32px;
                     position: relative;
+                    background-color: transparent;
 
                     &::before {
                         content: "";
@@ -224,6 +225,7 @@
                     font-size: 18px;
                     font-weight: 600;
                     line-height: 120%;
+                    min-height: 43.2px;
                 }
 
                 .content {
@@ -234,6 +236,10 @@
                     display: flex;
                     flex-direction: column;
                     gap: 8px;
+
+                    .text{
+                        min-height: 51.2px;
+                    }
 
                     * {
                         margin: 0px;
@@ -339,6 +345,20 @@
 }
 
 .about-leaflet {
+
+    .contact-us {
+        .row {
+            gap: unset;
+            margin-top: unset;
+    
+            img {
+                width: 100%;
+                aspect-ratio: 612/176;
+                height: unset;
+            }
+        }  
+    }
+
     .row {
         gap: 72px;
         margin-top: 64px;

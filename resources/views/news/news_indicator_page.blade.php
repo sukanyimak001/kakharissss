@@ -8,6 +8,6 @@
         @include("news.components.indicator_list_section")
         @include("home.components.cta")
         @include("home.components.contact_us")
-        @include("home.components.footer")
     </div>
+    @include("home.components.footer")
 @endsection

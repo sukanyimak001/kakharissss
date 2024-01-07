@@ -33,7 +33,13 @@
                         <td>{{ $i + 1 }}</td>
                         <td>
                             <img src="{{ asset('assets/images/pdf.png') }}" alt="">
-                            Perjanjian Kinerja Perubahan Kepala UPT RSMM Jawa Timur 2021
+                            {{ 
+                            [
+                                "Perjanjian Kinerja Perubahan Kepala UPT RSMM Jawa Timur 2021",
+                                "Laporan Kinerja Pejabat Eselon III RSMM 2021",
+                                "Perjanjian Kinerja ESELON III 2021",
+                                "Laporan Kinerja Kepala Eselon III UPT RSMM 2020",
+                            ][$i] }}
                         </td>
                         <td class="text-end">
                             <div class="badge">

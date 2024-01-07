@@ -16,12 +16,15 @@
     </div>
     <table class="table">
         <tbody>
-            @for ($i = 0; $i < 10; $i++)
+            @php
+                $items = ["Profil RSMM", "Antrian Online", "Geriatri", "AIDS", "TBC", "Cara Penggunaan Obat Mata", "Penggunaan Antibiotik", "Katarak", "Lasik", "Presbyond"];
+            @endphp
+            @for ($i = 0; $i < count($items); $i++)
                 <tr>
                     <td>{{ $i + 1 }}</td>
                     <td>
                       <img src="{{ asset("assets/images/pdf.png") }}" alt="">  
-                        Profil RSMM
+                        {{ $items[$i] }}
                     </td>
                     <td>
                         2021

@@ -3,39 +3,51 @@
         <li class="nav-item" role="presentation">
             <button class="nav-link {{ Request::get('page') == 'latest-info' ? 'active' : '' }}" id="latest-info"
                 data-bs-toggle="tab" data-bs-target="#latest-info-pane" type="button" role="tab"
-                aria-controls="latest-info-pane" aria-selected="{{ Request::get('page') == 'latest-info' ? 'true' : 'false' }}">Pengumuman
+                aria-controls="latest-info-pane"
+                aria-selected="{{ Request::get('page') == 'latest-info' ? 'true' : 'false' }}">Pengumuman
                 Terbaru</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link {{ Request::get('page') == 'news-and-article' ? 'active' : '' }}" id="news-and-article" data-bs-toggle="tab" data-bs-target="#news-and-article-pane"
-                type="button" role="tab" aria-controls="news-and-article-pane" aria-selected="{{ Request::get('page') == 'news-and-article' ? 'true' : 'false' }}">Berita &
+            <button class="nav-link {{ Request::get('page') == 'news-and-article' ? 'active' : '' }}"
+                id="news-and-article" data-bs-toggle="tab" data-bs-target="#news-and-article-pane" type="button"
+                role="tab" aria-controls="news-and-article-pane"
+                aria-selected="{{ Request::get('page') == 'news-and-article' ? 'true' : 'false' }}">Berita &
                 Artikel
                 Kesehatan</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link {{ Request::get('page') == 'contact-tab' ? 'active' : '' }}" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
-                type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="{{ Request::get('page') == 'contact-tab' ? 'true' : 'false' }}">Rekrutmen</button>
+            <button class="nav-link {{ Request::get('page') == 'contact-tab' ? 'active' : '' }}" id="contact-tab"
+                data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab"
+                aria-controls="contact-tab-pane"
+                aria-selected="{{ Request::get('page') == 'contact-tab' ? 'true' : 'false' }}">Rekrutmen</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link {{ Request::get('page') == 'webinar' ? 'active' : '' }}" id="webinar" data-bs-toggle="tab" data-bs-target="#webinar-pane" type="button"
-                role="tab" aria-controls="webinar-pane" aria-selected="{{ Request::get('page') == 'webinar' ? 'true' : 'false' }}">Seminar/Webinar
+            <button class="nav-link {{ Request::get('page') == 'webinar' ? 'active' : '' }}" id="webinar"
+                data-bs-toggle="tab" data-bs-target="#webinar-pane" type="button" role="tab"
+                aria-controls="webinar-pane"
+                aria-selected="{{ Request::get('page') == 'webinar' ? 'true' : 'false' }}">Seminar/Webinar
             </button>
         </li>
     </ul>
     <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade {{ Request::get('page') == 'latest-info' ? 'active show' : '' }}" id="latest-info-pane" role="tabpanel" aria-labelledby="latest-info"
-            tabindex="0">
+        <div class="tab-pane fade {{ Request::get('page') == 'latest-info' ? 'active show' : '' }}"
+            id="latest-info-pane" role="tabpanel" aria-labelledby="latest-info" tabindex="0">
             <div class="news-grid mt-3">
-                @for ($i = 0; $i < 6; $i++)
+                @for ($i = 0; $i < 3; $i++)
                     <div class="grid-item">
-                        <img src="{{ asset('assets/images/announcement1.png') }}" alt="" srcset="">
+                        <img src="{{ asset('assets/images/announcement' . ($i + 1) . '.png') }}" alt=""
+                            srcset="">
                         <div class="title">
-                            Hasil Tes Kompetensi Dasar
+                            {{ ['Hasil Tes Kompetensi Dasar', 'Lowongan Pegawai RSMM', 'Lowongan Pekerjaan RSMM'][$i] }}
                         </div>
                         <div class="content">
                             <div class="text">
-                                Pengumuman mengenai hasil tes kompetensi dasar bagi para calon pegawai tidak tetap BLUD
-                                non-PNS RSMM Jawa Timur.
+                                {{ [
+                                    "Pengumuman mengenai hasil tes kompetensi dasar bagi para calon pegawai tidak tetap BLUD
+                                                                                                                                                                                                non-PNS RSMM Jawa Timur.",
+                                    'Kesempatan untuk bergabung dengan tim RSMM merupakan peluang berharga untuk berkontribusi dalam memberikan pelayanan kesehatan mata berkualitas kepada masyarakat.',
+                                    'Kami dengan gembira mengumumkan adanya lowongan pegawai di RSMM Jawa Timur.',
+                                ][$i] }}
                             </div>
                             <div class="highlight text-bold">
                                 <strong>
@@ -91,24 +103,28 @@
                 </div>
             </div>
         </div>
-        <div class="tab-pane fade {{ Request::get('page') == 'news-and-article' ? 'active show' : '' }}" id="news-and-article-pane" role="tabpanel" aria-labelledby="news-and-article"
-            tabindex="0">
+        <div class="tab-pane fade {{ Request::get('page') == 'news-and-article' ? 'active show' : '' }}"
+            id="news-and-article-pane" role="tabpanel" aria-labelledby="news-and-article" tabindex="0">
             <div class="news-list">
                 @for ($i = 0; $i < 3; $i++)
                     <div class="news-item">
-                        <img src="{{ asset('assets/images/article1.png') }}" alt="" srcset="">
+                        <img src="{{ asset('assets/images/article' . ($i + 1) . '.png') }}" alt=""
+                            srcset="">
                         <div class="content">
                             <div class="title">
-                                Mengenal Deteksi Dini Pada Penyakit Stroke
+
+                                {{ [
+                                    'Mengenal Deteksi Dini Pada Penyakit Stroke',
+                                    'Memperingati Hari Penglihatan Sedunia 2023 : Pentingnya Kesehatan Mata di Tempat Kerja',
+                                    'Kenali Jantung Sehatmu, Sayangi Jantungmu',
+                                ][$i] }}
                             </div>
                             <div class="text">
-                                Pada tanggal 29 Oktober, seluruh dunia memperingati Hari Stroke dengan tujuan
-                                meningkatkan
-                                kesadaran dan pemahaman tentang penyakit ini. Peringatan Hari Stroke tahun 2023 memilih
-                                tema
-                                #GreaterThanStroke, yang mengajak masyarakat untuk mengenali dan mengatasi penyakit
-                                stroke
-                                dengan upaya lebih besar dan lebih komprehensif.
+                                {{ [
+                                    'Pada tanggal 29 Oktober, seluruh dunia memperingati Hari Stroke dengan tujuan meningkatkan kesadaran dan pemahaman tentang penyakit ini. Peringatan Hari Stroke tahun 2023 memilih tema #GreaterThanStroke, yang mengajak masyarakat untuk mengenali dan mengatasi penyakit stroke dengan upaya lebih besar dan lebih komprehensif.',
+                                    'Hari Penglihatan Sedunia 2023 menjadi momen penting untuk merayakan dan meningkatkan kesadaran tentang pentingnya kesehatan mata, khususnya di lingkungan tempat kerja. ',
+                                    "Penyakit jantung masih menjadi penyebab kematian. Penyakit jantung dapat mempengaruhi siapa saja, tanpa pandang usia atau jenis kelamin, dan seringkali berkembang tanpa gejala yang jelas. Oleh karena itu, penting untuk \"Kenali Jantung Sehatmu\" dengan gaya hidup sehat dan menjalani pemeriksaan medis secara berkala.",
+                                ][$i] }}
                             </div>
                             <div class="row">
                                 <div class="col d-flex align-items-center">
@@ -143,8 +159,8 @@
                 @endfor
             </div>
         </div>
-        <div class="tab-pane fade {{ Request::get('page') == 'contact-tab' ? 'active show' : '' }}" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
-            tabindex="0">
+        <div class="tab-pane fade {{ Request::get('page') == 'contact-tab' ? 'active show' : '' }}"
+            id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
             <div class="news-list">
                 @for ($i = 0; $i < 3; $i++)
                     <div class="news-item">
@@ -195,23 +211,50 @@
                 @endfor
             </div>
         </div>
-        <div class="tab-pane fade {{ Request::get('page') == 'webinar' ? 'active show' : '' }}" id="webinar-pane" role="tabpanel" aria-labelledby="webinar" tabindex="0">
+        <div class="tab-pane fade {{ Request::get('page') == 'webinar' ? 'active show' : '' }}" id="webinar-pane"
+            role="tabpanel" aria-labelledby="webinar" tabindex="0">
             <div class="news-grid mt-3">
                 @for ($i = 0; $i < 6; $i++)
                     <div class="grid-item">
-                        <img src="{{ asset('assets/images/webinar1.png') }}" alt="" srcset="">
+                        <img src="{{ asset('assets/images/webinar' . ($i + 1) . '.png') }}" alt=""
+                            srcset="">
                         <div class="title">
-                            Mengenal Deteksi Dini Pada Penyakit Stroke
+                            {{ [
+                                'RSMM Jawa Timur Ophthalmology Primary Care Updating Seminar (ROPUS) 2023',
+                                'RSMM Jawa Timur Ophthalmology Symposium (RJOS) 2022',
+                                'RSMM Jawa Timur Ophthalmology Primary Care Updating Seminar (ROPUS) 2022',
+                                'RSMM Jawa Timur Ophthalmology Symposium (RJOS) 2021',
+                                'Webinar Dokter Umum Puskesmas 2021',
+                                'RSMM Jawa Timur OnlineSymposium',
+                            ][$i] }}
                         </div>
                         <div class="content">
                             <div class="highlight">
-                                Aula Gedung A Dinas Sosial Provinsi JATIM
+                                @if ($i == 0)
+                                    Aula Gedung A Dinas Sosial Provinsi JATIM
+                                @else
+                                    Via Zoom Meeting
+                                @endif
                             </div>
                             <div class="highlight">
-                                Jumat, 9 Juni 2023 12.15 - Selesai
+                                {{ [
+                                    'Jumat, 9 Juni 2023 12.15 - Selesai',
+                                    'Sabtu, 31 Juli 2021 10.00 - Selesai',
+                                    'Selasa, 26 Juli 2022 12.30 - Selesai',
+                                    'Sabtu, 11 Desember 2021 09.00 - 11.00 WIB',
+                                    'Sabtu, 31 Juli 2021 10.00 - Selesai',
+                                    'Sabtu, 19 Desember 2020 09.00 - 12.00 WIB',
+                                ][$i] }}
                             </div>
                             <div class="text">
-                                “WASPADAI GLAUKOMA, Si Pencuri Penglihatan, Kenali Tandanya Sejak Dini”
+                                {{ [
+                                    '“WASPADAI GLAUKOMA, Si Pencuri Penglihatan, Kenali Tandanya Sejak Dini”',
+                                    '“Basic Surgery of Eyelid Anomaly”',
+                                    '“Deteksi Dini Gangguan Mata Anak”',
+                                    '“Update on Ocular Surface Disease and Intraocular Inflammation”',
+                                    '“Penguatan Peran Dokter Umum Puskesmas Dalam Deteksi Dini Gangguan Penglihatan”',
+                                    '“Amblyopia : All You Need To Know”',
+                                ][$i] }}
                             </div>
                         </div>
                         <div class="row">
