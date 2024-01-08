@@ -13,8 +13,8 @@
     <div id="specialistCarousel" class="carousel slide" data-bs-ride="false">
         <div class="carousel-indicators">
             @for ($i = 1; $i < count($slides); $i++)
-                <button type="button" data-bs-target="#specialistCarousel" data-bs-slide-to="{{ $i }}"
-                    class="{{ $i == 1 ? 'active' : '' }}" aria-current="true" aria-label="Slide {{ $i + 1 }}">
+                <button type="button" data-bs-target="#specialistCarousel" data-bs-slide-to="{{ $i - 1 }}"
+                    class="{{ $i == 1 ? 'active' : '' }}" aria-current="true" aria-label="Slide {{ $i }}">
                     {{ $slides[$i] }}
                 </button>
             @endfor
